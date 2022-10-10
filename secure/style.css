@@ -1,0 +1,54 @@
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+* { margin: 0; padding: 0; }
+body { font: 14px/1.4 Georgia, serif; background-color: rgba(0, 255, 255, 0.301);}
+#page-wrap {  width: 800px; margin: 0 auto; border: 1px solid cornflowerblue; margin-top: 10px;}
+
+textarea { border: 0; font: 14px Georgia, Serif; overflow: hidden; resize: none; }
+table { border-collapse: collapse; }
+table td, table th { border: 1px solid rgb(41, 142, 236); padding: 5px; }
+
+#header { height: 30px; width: 100%; margin: 10px 0; background: rgb(25, 39, 238); text-align: center; color: rgb(233, 21, 21);font-size: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-decoration: uppercase; letter-spacing: 20px; padding: 8px 0px; }
+
+#login{ margin-top: 10px;}
+
+
+#customer-title { font-size: 20px; font-weight: bold; float: left; }
+
+#meta { margin-top: 1px; width: 300px; float: right; }
+#meta td { text-align: right;  }
+#meta td.meta-head { text-align: left; background: rgba(238, 238, 238, 0.637); }
+#meta td textarea { width: 100%; height: 40px; text-align: right; }
+
+#ma{
+    background-color: rgba(127, 255, 212, 0.425);}
+    #pi{ background-color: rgba(127, 255, 212, 0.425);}
+    #cost{ background-color: rgba(127, 255, 212, 0.432); margin-left: 10px; width: 80px;}
+    #quantity{ background-color: rgba(127, 255, 212, 0.425); width: 90px;}
+    #re{background-color: rgba(127, 255, 212, 0.452);}
+    #de{background-color: rgba(127, 255, 212, 0.418);}
+    #oo{background-color: rgba(127, 255, 212, 0.425);}
+    #ok{background-color: rgba(127, 255, 212, 0.404);}
+#items { clear: both; width: 100%; margin: 30px 0 0 0; border: 1px solid cornflowerblue; }
+#items th {height: 30px; background: rgba(238, 238, 238, 0.582); }
+#items textarea { width: 80px; height: 120px; }
+#items tr.item-row td { border: 0; vertical-align: top; }
+#items td.description { width: 300px; }
+#items td.item-name { width: 175px; }
+#cost1{ background-color: aquamarine;}
+#items td.description textarea, #items td.item-name textarea { width: 100%; }
+#items td.total-line { border-right: 0; text-align: right; }
+#items td.total-value { border-left: 0; padding: 10px; }
+#items td.total-value textarea { height: 20px; background: none; }
+#items td.balance { background: rgba(238, 238, 238, 0.548); }
+#items td.blank { border: 0; }
+textarea:hover, textarea:focus, #items td.total-value textarea:hover, #items td.total-value textarea:focus, .delete:hover { background-color:#EEFF88; }
+
+.delete-wpr { position: relative; }
+.delete { display: block; color: rgb(197, 23, 23); text-decoration: none; position: absolute; background: #eeeeee91; font-weight: bold; padding: 0px 3px; border: 1px solid; top: -6px; left: -22px; font-family: Verdana; font-size: 12px; }
+
+#web{ position: relative; margin-left: 600px; font-style: italic; font-family: elephant;}

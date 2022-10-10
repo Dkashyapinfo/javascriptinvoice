@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Editable Invoice</title>
+	
+	<link rel='stylesheet' type='text/css' href='secure/style.css' />
+	<script src="secure\bill.js">
+
+	</script>
+
+</head>
+
+<body>
+
+	<div id="page-wrap">
+
+		<textarea id="header">INVOICE</textarea>
+		
+		<div id="identity">
+		
+			<table id="login">
+                <tr>
+                    <td class="login-head">Login Id</td>
+                    <td><textarea>0021</textarea></td>
+                </tr>
+                <tr>
+                    <td class="login-head">customer Name</td>
+                    <td><textarea class="name" id="cn" onblur="gn()">Name</textarea></td>
+                </tr>
+				<tr>
+					<td class="login-head">Phone Number</td>
+					<td><textarea>8581853226</textarea></td>
+				</tr>
+
+            </table>
+		
+		</div>
+		<div id="customer">
+
+            <table id="meta">
+                <tr>
+                    <td class="meta-head">Invoice Number</td>
+                    <td><textarea>000123</textarea></td>
+                </tr>
+                <tr>
+
+                    <td class="meta-head">Invoice Date</td>
+                    <td><textarea id="date">December 15, 2009</textarea></td>
+                </tr>
+                <tr>
+                    <td class="meta-head">customer Name</td>
+                    <td><div class="due" id="cnn">Name</div></td>
+                </tr>
+
+            </table>
+		
+		</div>
+		
+		<table id="items">
+		<form name="f">
+		  <tr>
+		      <th>Item</th>
+		      <th>Description</th>
+		      <th>Unit Cost</th>
+		      <th>Quantity</th>
+		      <th>Price</th>
+		  </tr>
+		  <br>
+
+		  <tr class="item-row" id="skip">
+		      <td class="item-name"><div class="delete-wpr"><textarea id="ma">SSD-replacement</textarea><button class="delete" href="" title="Remove" onclick="ok()">x</button></div></td>
+		      <td class="description"><textarea id="pi">A best SSD available in my workhouse</textarea></td>
+		      <td><textarea id="cost" name="cost" onblur="prc()">1</textarea></td>
+		      <td><textarea id="quantity" name="quantity" onblur="prc()">0</textarea></td>
+		      <td><span id="price" name="price" onblur="result()">1</span></td>
+		  </tr>
+		  
+		  <tr class="item-row" id="sleep">
+		      <td class="item-name"><div class="delete-wpr"><textarea id="re">Hard Disk Lemo</textarea><button class="delete" href="" title="Remove" onclick="del()">x</button></div></td>
+		      <td class="description"><textarea id="de">Best Hard Disk Lemo Brand work Best</textarea></td>
+		      <td><textarea id="cost1" onblur="key()">1</textarea></td>
+		      <td><textarea id="quantity1" onblur="key()" >0</textarea></td>
+			  <td><span id="price1" onblur="result()"> 1 </span></td>
+			  
+		  </tr>
+
+		  <tr class="item-row" id="sleep2">
+			<td class="item-name"><div class="delete-wpr"><textarea id="re"></textarea><button class="delete" href="" title="Remove" onclick="del2()">x</button></div></td>
+			<td class="description"><textarea id="de"></textarea></td>
+			<td><textarea id="cost2"></textarea></td>
+			<td><textarea id="quantity2" ></textarea></td>
+			<td><span id="price2"> </span></td>
+			
+		</tr>
+		
+		  
+		  <tr id="hiderow">
+		    <td colspan="5"><a id="addrow" href="" title="Add a row">Add a row</a></td>
+		  </tr>
+		  <tr>
+
+		      <td colspan="2" class="blank"> </td>
+		     
+		      <td class="total-value"><div id="total">Total</div></td>
+			  
+		  </tr>
+		  </form>
+		</table>
+	</div>
+	<div><a id="web">Thanks For Visiting</a></div>
+</body>
+
+</html>
